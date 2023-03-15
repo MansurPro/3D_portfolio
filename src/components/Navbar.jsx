@@ -26,8 +26,17 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p ></p>
+          <p className="text-white text-[18px] font-bold cursor-pointer">
+            Mansurbek <span className='sm:block hidden'>| Satarov</span>
+          </p>
         </Link>
+        <ul className='list-none hidden sm:flex flex-row gap-10'>
+          {navLinks.map((link) => (
+            <li>
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   )
