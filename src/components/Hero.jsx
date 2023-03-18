@@ -21,10 +21,12 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop backend and frontend applications. <br className='sm:block hidden'/>
-            And I am learing about AI, machine learning, and deep learing.
+            And I am learning about AI, machine learning, and deep learning.
           </p>
         </div>
       </div>
+
+      <ComputersCanvas />
     </section>
   )
 }
